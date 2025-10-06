@@ -34,6 +34,11 @@ jobs:
           pnpm lint:check
           pnpm format:check
 
+      - name: Update npm
+        run: |
+          # OIDCはnpm 11.5.1以降が必要
+          npm install -g npm@latest
+
       - name: Create Release
         run: |
           pnpm release
