@@ -1,4 +1,4 @@
-name: PR Helper
+name: Check Code
 
 on:
   pull_request:
@@ -10,7 +10,6 @@ defaults:
 
 jobs:
   check:
-    name: PR Checks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
