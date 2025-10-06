@@ -1,3 +1,8 @@
+/**
+ * An interface representing feature flags for conditional code inclusion.
+ * This interface should be compatible with `Record<string, boolean>`.
+ */
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ImportMetaFeatures {}
 
 interface ImportMeta {
