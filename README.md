@@ -29,7 +29,7 @@ A Vite plugin for feature flags.
     });
     ```
 
-3.  Create `client.d.ts` in your `src` directory.
+3.  Add type declaration for feature flags.
 
     ```ts
     /// <reference types="@virtual-live-lab/vite-plugin-feature-flags/client" />
