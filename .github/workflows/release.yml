@@ -43,4 +43,4 @@ jobs:
 
       - name: Create Release
         run: |
-          pnpm release --provenance
+          pnpm release
