@@ -1,6 +1,6 @@
 {
   "name": "@virtual-live-lab/vite-plugin-feature-flags",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
