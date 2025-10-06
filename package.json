@@ -9,8 +9,11 @@
     "provenance": true
   },
   "keywords": [],
-  "author": "VLL39 <vll39.tech@gmail.com> (https://github.com/vll39)",
+  "author": "VirtualLiveLab <vll39.tech@gmail.com> (https://github.com/VirtualLiveLab)",
   "homepage": "https://github.com/VirtualLiveLab/vite-plugin-feature-flags/tree/main/#readme",
+  "engines": {
+    "node": ">=20 <23"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VirtualLiveLab/vite-plugin-feature-flags.git",
