@@ -37,8 +37,10 @@ jobs:
       - name: Update npm
         run: |
           # OIDCはnpm 11.5.1以降が必要
+          echo "Current npm version: $(npm -v)"
           npm install -g npm@latest
+          echo "Updated npm version: $(npm -v)"
 
       - name: Create Release
         run: |
-          pnpm release
+          pnpm release --provenance
