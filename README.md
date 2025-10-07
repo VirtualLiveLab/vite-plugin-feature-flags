@@ -6,13 +6,13 @@ A feature flag plugin for Vite.
 
 ## How to use
 
-1.  Install the plugin.
+1. Install the plugin.
 
     ```bash
     pnpm add -D @virtual-live-lab/vite-plugin-feature-flags
     ```
 
-2.  Add this plugin to `vite.config.ts`.
+2. Add this plugin to `vite.config.ts`.
 
     ```ts
     import { defineConfig } from "vite";
@@ -29,18 +29,20 @@ A feature flag plugin for Vite.
     });
     ```
 
-3.  Add type declaration for feature flags.
+3. Add type declaration for feature flags.
 
     ```ts
-    /// <reference types="@virtual-live-lab/vite-plugin-feature-flags/client" />
-
-    interface ImportMetaFeatures {
-      hoge: boolean;
-      fuga: boolean;
+    declare module "@virtual-live-lab/vite-plugin-feature-flags/client" {
+      interface ImportMetaFeatures {
+        hoge: boolean;
+        fuga: boolean;
+      }
     }
+
+    export {}; // Declaration merging is only available in modules.
     ```
 
-4.  Use feature flags in your code.
+4. Use feature flags in your code.
 
     ```ts
     if (import.meta.features.hoge) {
