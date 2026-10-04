@@ -21,7 +21,9 @@ jobs:
       - name: Setup Node.js and pnpm
         uses: ./.github/common/setup-node-pnpm
 
-      - name: Run Tests
+      - name: Run Checks
         run: |
+          pnpm build
+          pnpm typecheck
           pnpm lint:check
           pnpm format:check

@@ -1,6 +1,6 @@
 # @virtual-live-lab/vite-plugin-feature-flags
 
-[![npm](https://img.shields.io/npm/v/@virtual-live-lab/vite-feature-flags-plugin)](https://www.npmjs.com/package/@virtual-live-lab/vite-feature-flags-plugin)
+[![npm](https://img.shields.io/npm/v/@virtual-live-lab/vite-plugin-feature-flags)](https://www.npmjs.com/package/@virtual-live-lab/vite-plugin-feature-flags)
 
 A feature flag plugin for Vite.
 
@@ -16,7 +16,7 @@ A feature flag plugin for Vite.
 
     ```ts
     import { defineConfig } from "vite";
-    import { featuresPlugin } from "vite-plugin-feature-flags";
+    import { featuresPlugin } from "@virtual-live-lab/vite-plugin-feature-flags";
 
     export default defineConfig({
       plugins: [

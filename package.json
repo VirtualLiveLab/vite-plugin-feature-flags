@@ -17,8 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VirtualLiveLab/vite-plugin-feature-flags.git",
-    "directory": "packages/stylelint-config"
+    "url": "git+https://github.com/VirtualLiveLab/vite-plugin-feature-flags.git"
   },
   "bugs": {
     "url": "https://github.com/VirtualLiveLab/vite-plugin-feature-flags/issues"
@@ -38,12 +37,15 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
     },
     "./client": {
       "types": "./src/client.d.ts"
     }
+  },
+  "peerDependencies": {
+    "vite": "^8.0.0"
   },
   "devDependencies": {
     "@types/node": "catalog:tsconfig",
@@ -54,7 +56,7 @@
     "prettier": "catalog:prettier",
     "publint": "^0.3.25",
     "tsdown": "^0.23.0",
-    "typescript": "^7.0.2",
+    "typescript": "^5.9.3",
     "typescript-eslint": "catalog:eslint",
     "unplugin-unused": "^0.6.0",
     "vite": "8.3.2"
