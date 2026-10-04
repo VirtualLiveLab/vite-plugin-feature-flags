@@ -1,9 +1,6 @@
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
 
-[tools]
-"npm:corepack" = "latest"
-
 [tasks.setup]
 depends = ["setup:*"]
 description = "Set up the dev environment"

@@ -10,7 +10,5 @@ catalogs:
     "@types/node": 26.6.4
     "@virtual-live-lab/tsconfig": 2.1.23
 
-managePackageManagerVersions: true
-
 overrides:
   "@virtual-live-lab/eslint-config>@eslint/js": 9.39.4
