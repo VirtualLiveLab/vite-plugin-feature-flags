@@ -1,6 +1,6 @@
 # @virtual-live-lab/vite-plugin-feature-flags
 
-[![npm)](https://img.shields.io/npm/v/@virtual-live-lab/vite-feature-flags-plugin)](https://www.npmjs.com/package/@virtual-live-lab/vite-feature-flags-plugin)
+[![npm](https://img.shields.io/npm/v/@virtual-live-lab/vite-feature-flags-plugin)](https://www.npmjs.com/package/@virtual-live-lab/vite-feature-flags-plugin)
 
 A feature flag plugin for Vite.
 

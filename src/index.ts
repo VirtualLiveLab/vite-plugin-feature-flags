@@ -39,12 +39,13 @@ export function featuresPlugin(
         };
       },
       name: "features-plugin-build",
-      transform: {
-        filter: {
-          code: "import.meta.features",
-        },
-        handler(_code, id) {
-          throw new Error(`import.meta.features is not optimized away: ${id}`);
+      renderChunk: {
+        handler(code, chunk) {
+          if (code.includes("import.meta.features")) {
+            throw new Error(
+              `import.meta.features is not optimized away: ${chunk.name}`,
+            );
+          }
         },
         order: "post",
       },
