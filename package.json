@@ -13,12 +13,11 @@
   "homepage": "https://github.com/VirtualLiveLab/vite-plugin-feature-flags/tree/main/#readme",
   "packageManager": "pnpm@10.18.1+sha512.77a884a165cbba2d8d1c19e3b4880eee6d2fcabd0d879121e282196b80042351d5eb3ca0935fa599da1dc51265cc68816ad2bddd2a2de5ea9fdf92adbec7cd34",
   "engines": {
-    "node": ">=20 <23"
+    "node": ">=22 <28"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VirtualLiveLab/vite-plugin-feature-flags.git",
-    "directory": "packages/stylelint-config"
+    "url": "git+https://github.com/VirtualLiveLab/vite-plugin-feature-flags.git"
   },
   "bugs": {
     "url": "https://github.com/VirtualLiveLab/vite-plugin-feature-flags/issues"
@@ -38,12 +37,15 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
     },
     "./client": {
       "types": "./src/client.d.ts"
     }
+  },
+  "peerDependencies": {
+    "vite": "^8.0.0"
   },
   "devDependencies": {
     "@types/node": "catalog:tsconfig",
@@ -52,11 +54,11 @@
     "@virtual-live-lab/tsconfig": "catalog:tsconfig",
     "eslint": "catalog:eslint",
     "prettier": "catalog:prettier",
-    "publint": "^0.3.13",
-    "tsdown": "^0.15.5",
-    "typescript": "^5.8.3",
+    "publint": "^0.3.25",
+    "tsdown": "^0.23.0",
+    "typescript": "^5.9.3",
     "typescript-eslint": "catalog:eslint",
-    "unplugin-unused": "^0.5.3",
-    "vite": "6.3.4"
+    "unplugin-unused": "^0.6.0",
+    "vite": "8.3.2"
   }
 }

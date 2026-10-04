@@ -1,13 +1,16 @@
 catalogs:
   eslint:
-    "@virtual-live-lab/eslint-config": 2.2.22
-    eslint: 9.30.1
-    typescript-eslint: 8.36.0
+    "@virtual-live-lab/eslint-config": 2.4.4
+    eslint: 9.39.4
+    typescript-eslint: 8.71.0
   prettier:
-    "@virtual-live-lab/prettier-config": 2.0.19
-    prettier: 3.6.2
+    "@virtual-live-lab/prettier-config": 2.0.26
+    prettier: 3.9.9
   tsconfig:
-    "@types/node": 22.15.32
-    "@virtual-live-lab/tsconfig": 2.1.20
+    "@types/node": 26.6.4
+    "@virtual-live-lab/tsconfig": 2.1.23
 
 managePackageManagerVersions: true
+
+overrides:
+  "@virtual-live-lab/eslint-config>@eslint/js": 9.39.4
